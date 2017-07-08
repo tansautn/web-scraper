@@ -1,0 +1,19 @@
+# Created by .ignore support plugin (hsz.mobi)
+.idea
+*.iml
+out
+gen### Laravel template
+vendor/
+node_modules/
+npm-debug.log
+bootstrap/compiled.php
+app/storage/
+public/storage
+public/hot
+storage/*.key
+.env.*.php
+.env.php
+.env
+Homestead.yaml
+Homestead.json
+.rocketeer/

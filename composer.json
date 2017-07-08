@@ -1,0 +1,23 @@
+{
+    "name": "zuko/web-scraper",
+    "description": "Laravel Package for Scraping Content from other website. Require PHP CURL & PHP DOM extension.",
+    "type": "library",
+    "require": {
+        "php": ">=5.6",
+        "ext-curl": "*",
+        "php-curl-class/php-curl-class": "^7.3"
+    },
+    "license": "Apache 2.0",
+    "authors": [
+        {
+            "name": "Zuko",
+            "email": "tansautn@gmail.com"
+        }
+    ],
+    "minimum-stability": "dev",
+    "autoload": {
+        "psr-4": {
+            "Zuko\\WebScraper\\" : "src"
+        }
+    }
+}
