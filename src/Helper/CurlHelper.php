@@ -29,6 +29,9 @@
 
 namespace Zuko\WebScraper\Helper;
 
+
+use Curl\Curl;
+
 /**
  * Class CurlHelper
  * @package Zuko\WebScraper\Helper
@@ -37,9 +40,25 @@ class CurlHelper {
     /** @var  \Curl\Curl */
     private $_curl;
 
-    public function __construct($curl)
+    private function setDefaultCurlOpts()
+    {
+        $opts = config('webscraper.curlDefaultOpt');
+        $this->getCurl()->setOpts($opts);
+    }
+
+    public function __construct(Curl $curl)
     {
         $this->_curl = $curl;
+        $this->setDefaultCurlOpts();
     }
+
+    /**
+     * @return \Curl\Curl
+     */
+    public function getCurl()
+    {
+        return $this->_curl;
+    }
+
 
 }

@@ -27,6 +27,6 @@
 **/
 return [
     'curlDefaultOpt' => [
-
+        CURLOPT_SSL_VERIFYPEER => false
     ]
 ];
